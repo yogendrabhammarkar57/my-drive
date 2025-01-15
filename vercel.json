@@ -11,5 +11,14 @@
         "src": "/(.*)",
         "dest": "app.js"
       }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)", 
+        "destination": "user/login"
+      }
     ]
   }
+
+
+ 
