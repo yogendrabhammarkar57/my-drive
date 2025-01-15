@@ -58,7 +58,8 @@ router.post('/upload', authMiddleware, upload.single('file'), uploadToCloudinary
         user: userId,
     });
 
-    res.json(newFile);
+    // res.json(newFile);
+    res.redirect('/home');
 });
 
 

@@ -34,7 +34,8 @@ router.post('/register',
         username
     });
 
-    res.json(newUser);
+    // res.json(newUser);
+    res.render('login');
 });
 
 // login routes
@@ -79,7 +80,8 @@ router.post('/login',
         }, 
         process.env.JWT_SECRET)
         res.cookie('token',token);
-        res.send('Logged in'); 
+        // res.send('Logged in'); 
+        res.redirect('/home');
 
     });
 module.exports = router;
